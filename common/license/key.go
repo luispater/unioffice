@@ -126,7 +126,7 @@ func (k *LicenseKey) ToString() string {
 
 // IsLicensed returns true if the package is licensed.
 func (k *LicenseKey) IsLicensed() bool {
-	return k.Tier != LicenseTierUnlicensed
+	return k.Tier == LicenseTierUnlicensed
 }
 
 // MakeUnlicensedKey returns an unlicensed key.
